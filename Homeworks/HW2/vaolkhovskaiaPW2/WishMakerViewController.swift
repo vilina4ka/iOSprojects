@@ -31,7 +31,7 @@ final class WishMakerViewController: UIViewController {
         static let leadingPadding: CGFloat = 20
         static let topPadding: CGFloat = 30
         static let titleTopPadding: CGFloat = 30
-        static let descriptionTopPadding: CGFloat = 20
+        static let descriptionTopPadding: CGFloat = 5
         static let stackBottomPadding: CGFloat = -40
         static let buttonSpacing: CGFloat = 20
         static let textFieldWidthOffset: CGFloat = -150
@@ -41,7 +41,7 @@ final class WishMakerViewController: UIViewController {
         static let titleText = "WishMaker"
         static let descriptionText = """
         This app provides you the oportunity to fulfil your wishes!
-        \n\n1. You can change the background color by 4 variants.
+        \n1. You can change the background color by 4 variants.
         """
         static let slidersButtonText = "color sliders"
         static let randomColorButtonText = "random color"
