@@ -58,16 +58,17 @@ final class WishMakerViewController: UIViewController {
     }
     
     // MARK: - Fields
-    let titleLabel = UILabel()
-    let descriptionLabel = UILabel()
-    let textHex = UITextField()
+    let titleLabel : UILabel = UILabel()
+    let descriptionLabel : UILabel = UILabel()
+    let textHex: UITextField = UITextField()
     
-    let buttonSliders = UIButton(type: .system)
-    let buttonRandom = UIButton(type: .system)
-    let buttonHex = UIButton(type: .system)
-    let buttonPicker = UIButton(type: .system)
+    let addWishButton : UIButton = UIButton(type: .system)
+    let buttonSliders : UIButton = UIButton(type: .system)
+    let buttonRandom : UIButton = UIButton(type: .system)
+    let buttonHex : UIButton = UIButton(type: .system)
+    let buttonPicker : UIButton = UIButton(type: .system)
     
-    let stack = UIStackView()
+    let stack : UIStackView = UIStackView()
     
     // MARK: - Lifecycle methods
     override func viewDidLoad() {
