@@ -10,10 +10,10 @@ import UIKit
 final class CustomSlider: UIView {
     // MARK: - Constants
     private enum Constants {
-        static let titleViewTopPadding: CGFloat = 10
+        static let titleViewTopPadding: CGFloat = 5
         static let titleViewLeadingPadding: CGFloat = 20
         static let sliderLeadingPadding: CGFloat = 20
-        static let sliderBottomPadding: CGFloat = -10
+        static let sliderBottomPadding: CGFloat = -5
     }
     
     // MARK: - Fields

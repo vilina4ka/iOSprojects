@@ -32,10 +32,11 @@ final class WishMakerViewController: UIViewController {
         static let topPadding: CGFloat = 30
         static let titleTopPadding: CGFloat = 30
         static let descriptionTopPadding: CGFloat = 5
-        static let stackBottomPadding: CGFloat = -40
         static let buttonSpacing: CGFloat = 20
         static let textFieldWidthOffset: CGFloat = -150
         static let buttonHexWidthOffset: CGFloat = 250
+        static let buttonHeight : CGFloat = 20
+        static let buttonBottom : CGFloat = -30
         
         // Texts
         static let titleText = "WishMaker"
@@ -48,6 +49,7 @@ final class WishMakerViewController: UIViewController {
         static let hexTextFieldPlaceholder = "enter HEX code"
         static let applyHexButtonText = "apply"
         static let colorPickerButtonText = "color picker"
+        static let addWishButtonText = "my wishes"
         
         // Slider ranges
         static let sliderMinValue: CGFloat = 0
@@ -82,6 +84,7 @@ final class WishMakerViewController: UIViewController {
         configureTitle()
         configureDescription()
         
+        configureAddWishButton()
         configureButtonSliders()
         configureSliders()
         configureButtonRandom()
@@ -116,7 +119,8 @@ final class WishMakerViewController: UIViewController {
         }
     }
     
-    @objc private func openColorPicker() {
+    @objc 
+    private func openColorPicker() {
         if #available(iOS 14.0, *) {
             let colorPicker = UIColorPickerViewController()
             colorPicker.delegate = self
@@ -125,7 +129,26 @@ final class WishMakerViewController: UIViewController {
             present(colorPicker, animated: true, completion: nil)
         }
     }
-
+    
+    @objc
+    private func addWishButtonPressed() {
+    }
+    
+    private func configureAddWishButton() {
+        view.addSubview(addWishButton)
+        addWishButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            addWishButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            addWishButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: Constants.buttonBottom),
+            addWishButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Constants.leadingPadding)
+        ])
+        addWishButton.backgroundColor = .white
+        addWishButton.setTitleColor(.systemPink, for: .normal)
+        addWishButton.setTitle(Constants.addWishButtonText, for: .normal)
+        
+        addWishButton.layer.cornerRadius = Constants.buttonCornerRadius
+        addWishButton.addTarget(self, action: #selector(addWishButtonPressed), for: .touchUpInside)
+    }
     
     private func configureTitle() {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -176,7 +199,7 @@ final class WishMakerViewController: UIViewController {
         NSLayoutConstraint.activate([
             stack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Constants.leadingPadding),
-            stack.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: Constants.stackBottomPadding)
+            stack.bottomAnchor.constraint(equalTo: addWishButton.topAnchor, constant: -Constants.buttonSpacing)
         ])
         
         sliderRed.valueChanged = { [weak self] value in self?.updateColor(sliderRed: sliderRed, sliderGreen: sliderGreen, sliderBlue: sliderBlue) }
