@@ -35,8 +35,8 @@ final class WishMakerViewController: UIViewController {
         static let buttonSpacing: CGFloat = 20
         static let textFieldWidthOffset: CGFloat = -150
         static let buttonHexWidthOffset: CGFloat = 250
-        static let buttonHeight : CGFloat = 20
-        static let buttonBottom : CGFloat = -30
+        static let buttonHeight: CGFloat = 20
+        static let buttonBottom: CGFloat = -30
         
         // Texts
         static let titleText = "WishMaker"
@@ -60,17 +60,17 @@ final class WishMakerViewController: UIViewController {
     }
     
     // MARK: - Fields
-    let titleLabel : UILabel = UILabel()
-    let descriptionLabel : UILabel = UILabel()
+    let titleLabel: UILabel = UILabel()
+    let descriptionLabel: UILabel = UILabel()
     let textHex: UITextField = UITextField()
     
-    let addWishButton : UIButton = UIButton(type: .system)
-    let buttonSliders : UIButton = UIButton(type: .system)
-    let buttonRandom : UIButton = UIButton(type: .system)
-    let buttonHex : UIButton = UIButton(type: .system)
-    let buttonPicker : UIButton = UIButton(type: .system)
+    let addWishButton: UIButton = UIButton(type: .system)
+    let buttonSliders: UIButton = UIButton(type: .system)
+    let buttonRandom: UIButton = UIButton(type: .system)
+    let buttonHex: UIButton = UIButton(type: .system)
+    let buttonPicker: UIButton = UIButton(type: .system)
     
-    let stack : UIStackView = UIStackView()
+    let stack: UIStackView = UIStackView()
     
     // MARK: - Lifecycle methods
     override func viewDidLoad() {
@@ -289,4 +289,3 @@ final class WishMakerViewController: UIViewController {
         view.backgroundColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha: Constants.alpha)
     }
 }
-
