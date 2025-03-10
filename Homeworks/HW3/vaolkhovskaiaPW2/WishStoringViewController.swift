@@ -47,6 +47,7 @@ final class WishStoringViewController: UIViewController {
         ])
     }
     private func configureTable() {
+        table.register(WrittenWishCell.self, forCellReuseIdentifier: WrittenWishCell.reuseId)
         table.translatesAutoresizingMaskIntoConstraints = false
         table.backgroundColor = .red
         table.dataSource = self
@@ -62,6 +63,7 @@ final class WishStoringViewController: UIViewController {
         ])
     }
 }
+
 // MARK: - UITableViewDataSource
 extension WishStoringViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
