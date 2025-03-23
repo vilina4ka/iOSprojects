@@ -41,7 +41,7 @@ final class WishMakerViewController: UIViewController {
         // Texts
         static let titleText = "WishMaker"
         static let descriptionText = """
-        This app provides you the oportunity to fulfil your wishes!
+        This app provides you the opportunity to fulfil your wishes!
         \n1. You can change the background color by 4 variants.
         """
         static let slidersButtonText = "color sliders"

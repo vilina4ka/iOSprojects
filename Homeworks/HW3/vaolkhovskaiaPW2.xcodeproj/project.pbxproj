@@ -15,6 +15,9 @@
 		0A4BC7962CDA5BCF00C4AEE1 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC7952CDA5BCF00C4AEE1 /* CustomSlider.swift */; };
 		0A4BC7982CDAADA300C4AEE1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC7972CDAADA300C4AEE1 /* UIColorExtension.swift */; };
 		0A4BC79A2CDC236A00C4AEE1 /* WishMakerViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC7992CDC236A00C4AEE1 /* WishMakerViewControllerExtension.swift */; };
+		0A747B3E2D81CF7C00AE60FB /* AddWishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A747B3D2D81CF7C00AE60FB /* AddWishCell.swift */; };
+		0AA5EF3D2D32AEBE00C5DEB3 /* WishStoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5EF3C2D32AEBE00C5DEB3 /* WishStoringViewController.swift */; };
+		0AA5EF3F2D3540FD00C5DEB3 /* WrittenWishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5EF3E2D3540FD00C5DEB3 /* WrittenWishCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		0A4BC7952CDA5BCF00C4AEE1 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		0A4BC7972CDAADA300C4AEE1 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		0A4BC7992CDC236A00C4AEE1 /* WishMakerViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMakerViewControllerExtension.swift; sourceTree = "<group>"; };
+		0A747B3D2D81CF7C00AE60FB /* AddWishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWishCell.swift; sourceTree = "<group>"; };
+		0AA5EF3C2D32AEBE00C5DEB3 /* WishStoringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishStoringViewController.swift; sourceTree = "<group>"; };
+		0AA5EF3E2D3540FD00C5DEB3 /* WrittenWishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrittenWishCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				0A4BC77F2CDA295D00C4AEE1 /* AppDelegate.swift */,
+				0A747B3D2D81CF7C00AE60FB /* AddWishCell.swift */,
 				0A4BC7812CDA295D00C4AEE1 /* SceneDelegate.swift */,
+				0AA5EF3C2D32AEBE00C5DEB3 /* WishStoringViewController.swift */,
 				0A4BC7932CDA32BE00C4AEE1 /* WishMakerViewController.swift */,
+				0AA5EF3E2D3540FD00C5DEB3 /* WrittenWishCell.swift */,
 				0A4BC7952CDA5BCF00C4AEE1 /* CustomSlider.swift */,
 				0A4BC7992CDC236A00C4AEE1 /* WishMakerViewControllerExtension.swift */,
 				0A4BC7972CDAADA300C4AEE1 /* UIColorExtension.swift */,
@@ -143,12 +152,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA5EF3F2D3540FD00C5DEB3 /* WrittenWishCell.swift in Sources */,
 				0A4BC7802CDA295D00C4AEE1 /* AppDelegate.swift in Sources */,
 				0A4BC7962CDA5BCF00C4AEE1 /* CustomSlider.swift in Sources */,
 				0A4BC79A2CDC236A00C4AEE1 /* WishMakerViewControllerExtension.swift in Sources */,
 				0A4BC7982CDAADA300C4AEE1 /* UIColorExtension.swift in Sources */,
 				0A4BC7942CDA32BE00C4AEE1 /* WishMakerViewController.swift in Sources */,
+				0AA5EF3D2D32AEBE00C5DEB3 /* WishStoringViewController.swift in Sources */,
 				0A4BC7822CDA295D00C4AEE1 /* SceneDelegate.swift in Sources */,
+				0A747B3E2D81CF7C00AE60FB /* AddWishCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
