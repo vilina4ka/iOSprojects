@@ -16,6 +16,9 @@
 		0A4BC7982CDAADA300C4AEE1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC7972CDAADA300C4AEE1 /* UIColorExtension.swift */; };
 		0A4BC79A2CDC236A00C4AEE1 /* WishMakerViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC7992CDC236A00C4AEE1 /* WishMakerViewControllerExtension.swift */; };
 		0A747B3E2D81CF7C00AE60FB /* AddWishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A747B3D2D81CF7C00AE60FB /* AddWishCell.swift */; };
+		0A7EB78D2D91433E0087999C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7EB78C2D91433E0087999C /* CoreDataManager.swift */; };
+		0A7EB7922D918CD50087999C /* WishCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7EB7912D918CD40087999C /* WishCoreData.swift */; };
+		0A7EB7952D9190D30087999C /* WishModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A7EB7932D9190D30087999C /* WishModel.xcdatamodeld */; };
 		0AA5EF3D2D32AEBE00C5DEB3 /* WishStoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5EF3C2D32AEBE00C5DEB3 /* WishStoringViewController.swift */; };
 		0AA5EF3F2D3540FD00C5DEB3 /* WrittenWishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5EF3E2D3540FD00C5DEB3 /* WrittenWishCell.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +35,9 @@
 		0A4BC7972CDAADA300C4AEE1 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		0A4BC7992CDC236A00C4AEE1 /* WishMakerViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMakerViewControllerExtension.swift; sourceTree = "<group>"; };
 		0A747B3D2D81CF7C00AE60FB /* AddWishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWishCell.swift; sourceTree = "<group>"; };
+		0A7EB78C2D91433E0087999C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		0A7EB7912D918CD40087999C /* WishCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishCoreData.swift; sourceTree = "<group>"; };
+		0A7EB7942D9190D30087999C /* WishModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WishModel.xcdatamodel; sourceTree = "<group>"; };
 		0AA5EF3C2D32AEBE00C5DEB3 /* WishStoringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishStoringViewController.swift; sourceTree = "<group>"; };
 		0AA5EF3E2D3540FD00C5DEB3 /* WrittenWishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrittenWishCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +72,7 @@
 		0A4BC77E2CDA295D00C4AEE1 /* vaolkhovskaiaPW2 */ = {
 			isa = PBXGroup;
 			children = (
+				0A7EB78C2D91433E0087999C /* CoreDataManager.swift */,
 				0A4BC77F2CDA295D00C4AEE1 /* AppDelegate.swift */,
 				0A747B3D2D81CF7C00AE60FB /* AddWishCell.swift */,
 				0A4BC7812CDA295D00C4AEE1 /* SceneDelegate.swift */,
@@ -78,6 +85,8 @@
 				0A4BC7882CDA295F00C4AEE1 /* Assets.xcassets */,
 				0A4BC78A2CDA295F00C4AEE1 /* LaunchScreen.storyboard */,
 				0A4BC78D2CDA295F00C4AEE1 /* Info.plist */,
+				0A7EB7912D918CD40087999C /* WishCoreData.swift */,
+				0A7EB7932D9190D30087999C /* WishModel.xcdatamodeld */,
 			);
 			path = vaolkhovskaiaPW2;
 			sourceTree = "<group>";
@@ -154,13 +163,16 @@
 			files = (
 				0AA5EF3F2D3540FD00C5DEB3 /* WrittenWishCell.swift in Sources */,
 				0A4BC7802CDA295D00C4AEE1 /* AppDelegate.swift in Sources */,
+				0A7EB7952D9190D30087999C /* WishModel.xcdatamodeld in Sources */,
 				0A4BC7962CDA5BCF00C4AEE1 /* CustomSlider.swift in Sources */,
 				0A4BC79A2CDC236A00C4AEE1 /* WishMakerViewControllerExtension.swift in Sources */,
 				0A4BC7982CDAADA300C4AEE1 /* UIColorExtension.swift in Sources */,
 				0A4BC7942CDA32BE00C4AEE1 /* WishMakerViewController.swift in Sources */,
 				0AA5EF3D2D32AEBE00C5DEB3 /* WishStoringViewController.swift in Sources */,
 				0A4BC7822CDA295D00C4AEE1 /* SceneDelegate.swift in Sources */,
+				0A7EB78D2D91433E0087999C /* CoreDataManager.swift in Sources */,
 				0A747B3E2D81CF7C00AE60FB /* AddWishCell.swift in Sources */,
+				0A7EB7922D918CD50087999C /* WishCoreData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +387,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0A7EB7932D9190D30087999C /* WishModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0A7EB7942D9190D30087999C /* WishModel.xcdatamodel */,
+			);
+			currentVersion = 0A7EB7942D9190D30087999C /* WishModel.xcdatamodel */;
+			path = WishModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0A4BC7742CDA295D00C4AEE1 /* Project object */;
 }
