@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0035683F-D534-4DE9-ABB2-9A5FA5CA2EDF"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "842ABA5A-D79D-4549-87F1-7C02167914CC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vaolkhovskaiaPW2/WishCoreData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "Wish"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "842ABA5A-D79D-4549-87F1-7C02167914CC - 76b43321fb57935"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vaolkhovskaiaPW2.Wish.__allocating_init(entity: __C.NSEntityDescription, insertInto: Swift.Optional&lt;__C.NSManagedObjectContext&gt;) -&gt; vaolkhovskaiaPW2.Wish"
+                  moduleName = "vaolkhovskaiaPW2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vilinaolhovskaya/xcode%20projects/iOSprojects/Homeworks/HW3/vaolkhovskaiaPW2/WishCoreData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "842ABA5A-D79D-4549-87F1-7C02167914CC - 5269feadacc73ab0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vaolkhovskaiaPW2.Wish.init(entity: __C.NSEntityDescription, insertInto: Swift.Optional&lt;__C.NSManagedObjectContext&gt;) -&gt; vaolkhovskaiaPW2.Wish"
+                  moduleName = "vaolkhovskaiaPW2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vilinaolhovskaya/xcode%20projects/iOSprojects/Homeworks/HW3/vaolkhovskaiaPW2/WishCoreData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "842ABA5A-D79D-4549-87F1-7C02167914CC - b2c82576b490d3fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vaolkhovskaiaPW2.Wish.__deallocating_deinit"
+                  moduleName = "vaolkhovskaiaPW2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vilinaolhovskaya/xcode%20projects/iOSprojects/Homeworks/HW3/vaolkhovskaiaPW2/WishCoreData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
